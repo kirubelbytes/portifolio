@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full-Stack Developer & Innovator - Building scalable solutions with proven problem-solving skills."
+    />
+    <meta name="author" content="Developer Portfolio" />
+    <title>Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #000000;
+        color: #ffffff;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #222;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+        align-items: start;
+        padding: 4rem 0;
+      }
+
+      h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+      }
+
+      .lead {
+        font-size: 1.125rem;
+        color: #999;
+        margin-bottom: 2rem;
+        max-width: 600px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #222;
+      }
+
+      .stat h3 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .stat p {
+        font-size: 0.875rem;
+        color: #666;
+      }
+
+      .profile {
+        width: 300px;
+        height: 400px;
+        background: #111;
+        border-radius: 8px;
+        margin-left: auto;
+        overflow: hidden;
+      }
+
+      .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        filter: grayscale(100%);
+      }
+
+      /* Content */
+      .content {
+        min-height: 100vh;
+        padding: 4rem 0;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 4rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        letter-spacing: -0.02em;
+      }
+
+      .list {
+        list-style: none;
+      }
+
+      .list-item {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid #111;
+      }
+
+      .list-item:last-child {
+        border-bottom: none;
+      }
+
+      .list-item h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      .list-item p {
+        color: #999;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+
+      .list-item span {
+        display: block;
+        font-size: 0.8125rem;
+        color: #666;
+        margin-top: 0.75rem;
+      }
+
+      .contact {
+        position: sticky;
+        top: 2rem;
+      }
+
+      .contact-list {
+        list-style: none;
+      }
+
+      .contact-list li {
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-list a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9375rem;
+      }
+
+      .contact-list a:hover {
+        color: #999;
+      }
+
+      .contact-list small {
+        display: block;
+        color: #666;
+        font-size: 0.8125rem;
+        margin-bottom: 0.25rem;
+      }
+
+      /* Footer */
+      footer {
+        padding: 2rem 0;
+        border-top: 1px solid #222;
+      }
+
+      footer p {
+        font-size: 0.875rem;
+        color: #666;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero-grid,
+        .content-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .profile {
+          margin: 0;
+        }
+
+        .stats {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .contact {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1>Kirubel Assefa - Building Cosmos</h1>
+            <p class="lead">
+              Fast learner obsessed with deep technical problems. From winning
+              national STEM competitions to self-teaching engineering with
+              (React, TypeScript, Node.js, Prisma, WebGL), I transform
+              constraints into innovation. Currently building Cosmos—an
+              AI-immersive knowledge world that reimagines how humans interact
+              with information.
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <h3>2nd Place</h3>
+                <p>National Science Fair</p>
+              </div>
+              <div class="stat">
+                <h3>Built</h3>
+                <p>Bora Dairy Tech</p>
+              </div>
+              <div class="stat">
+                <h3>Full-Stack</h3>
+                <p>PERN Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="./potifolioimg.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-grid">
+          <div>
+            <h2>Experience</h2>
+            <ul class="list">
+              <li class="list-item">
+                <h3>AURA - AI-Immersive Knowledge World</h3>
+                <p>
+                  Building an AI-powered learning platform that fuses
+                  aspirational spatial environments (WebGL "Vibe Layer") with
+                  frontier AI utility. Pioneering "Outside-In" Architecture that
+                  separates aesthetic (Three.js) from utility (2D RAG Dashboard)
+                  for high performance. Exploring bi-directional highlight
+                  synchronization, persistent study co-pilots using long-context
+                  models, and immersive cognitive environments.
+                </p>
+                <span
+                  >TypeScript, React, Node.js, PostgreSQL/Prisma, WebGL
+                  (Three.js)</span
+                >
+              </li>
+              <li class="list-item">
+                <h3>7th National Science Fair - 2nd Place Individual</h3>
+                <p>
+                  Ranked 2nd individually out of 160 candidates nationwide after
+                  engineering a CO₂ emission reduction solution in 3 weeks. Team
+                  ranked 1st among 44 STEM centers. Awarded laptop by partners,
+                  Israeli Ambassador.
+                </p>
+                <span>Debre Tabor University STEM Center</span>
+              </li>
+              <li class="list-item">
+                <h3>Bora Dairy Tech</h3>
+                <p>
+                  Founded dairy technology startup after EDI entrepreneurship
+                  program. Developed locally manufactured milking machine for
+                  rural households, addressing market gap through resourceful
+                  engineering under tough constraints. Competed against
+                  graduates and secured ministerial recognition.
+                </p>
+                <span>Entrepreneurship & Hardware Innovation</span>
+              </li>
+              <li class="list-item">
+                <h3>20+ Innovative Projects Since Childhood</h3>
+                <p>
+                  Consistent track record of identifying problems and building
+                  solutions from an early age. From initial STEM center
+                  innovations to full-stack applications, each project
+                  demonstrates rapid learning, resourcefulness, and the ability
+                  to execute under constraints. Portfolio spans hardware
+                  prototypes, dairy business solutions, and modern web
+                  applications.
+                </p>
+                <span>Problem-Solving & Innovation</span>
+              </li>
+              <li class="list-item">
+                <h3>E-Commerce Platform Backend</h3>
+                <p>
+                  Built scalable backend architecture for e-commerce platform
+                  using Node.js, Express, and Prisma ORM with PostgreSQL.
+                  Implemented RESTful APIs, authentication, product management,
+                  and order processing systems.
+                </p>
+                <span>Full-Stack Development</span>
+              </li>
+              <li class="list-item">
+                <h3>Expense Tracker Application Backend</h3>
+                <p>
+                  Developed backend services for expense tracking app with
+                  TypeScript and Node.js. Features include transaction
+                  categorization, budget management, and real-time analytics
+                  with secure data handling.
+                </p>
+                <span>Full-Stack Development</span>
+              </li>
+              <li class="list-item">
+                <h3>Bank Landing Page</h3>
+                <p>
+                  Designed and polished professional landing page for banking
+                  institution with modern UI/UX principles. Created responsive,
+                  accessible interface optimized for conversion and user
+                  engagement.
+                </p>
+                <span>Frontend Development</span>
+              </li>
+              <li class="list-item">
+                <h3>Simple Dashboard Application</h3>
+                <p>
+                  Developed clean, intuitive dashboard interface with data
+                  visualization and real-time updates. Built with React and
+                  modern frontend practices, focusing on performance and user
+                  experience.
+                </p>
+                <span>Frontend Development</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <h2>Connect</h2>
+            <ul class="contact-list">
+              <li>
+                <small>Email</small>
+                <a href="mailto:kirubelassefa485@gmail.com">Email</a>
+              </li>
+              <li>
+                <small>LinkedIn</small>
+                <a href="linkedin.com/in/kirubel-assefa-ab89a63a1"
+                  >Kirubel Assefa</a
+                >
+              </li>
+              <li>
+                <small>GitHub</small>
+                <a href="https://github.com/kirubelbytes">Kirubelbytes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 Developer Portfolio</p>
+      </div>
+    </footer>
+  </body>
+</html>
